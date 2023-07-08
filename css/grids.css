@@ -1,0 +1,47 @@
+.parent-container {
+    position: relative;
+    margin: 0 auto; /* Center container */
+    max-width: 1400px;
+}
+
+.parent-container + .parent-container {
+    margin-top: 40px;
+}
+
+.grid-container {
+    background-color: var(--color-darkgray);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+    padding: 25px;
+    margin: 0 auto; /* Center container */
+    border-radius: 12px;
+    max-width: 1200px;
+}
+
+.grid-button {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    background-color: #e3dfdf;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.grid-button:hover {
+    background-color: #8e8e8e;
+}
+
+.spotify-embed {
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition-duration: 100ms;
+}
+
+.spotify-embed:hover {
+    transform: scale(1.08);
+    transition-duration: 120ms;
+}

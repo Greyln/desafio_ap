@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Un portal de musica">
+    <meta name="author" content="Lwcl">
+    <title>MusicPortal - Artistas</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/spotify.png">
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Decorators -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Styling -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-title">
+                MusicPortal
+            </div>
+            <ul class="navbar-buttons">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="songs.html">Canciones</a></li>
+                <li><a href="artists.html">Artistas</a></li>
+                <li><a href="about.html">Acerca</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="heading" style="background-color: var(--color-rose);">
+            <h2>Mis artistas favoritos</h2>
+        </div>
+        <section class="grid-container" id="artists-container"></section>
+    </main>
+    <footer>
+        <section class="social">
+            <a href="https://pinterest.com">
+                <i class='bx bxl-pinterest' id='pinterest'></i>
+            </a>
+            <a href="https://instagram.com">
+                <i class='bx bxl-instagram' id='instagram'></i>
+            </a>
+            <a href="https://tiktok.com">
+                <i class='bx bxl-tiktok' id='tiktok'></i>
+            </a>
+        </section>
+        <div class="content container-bottom" style="background-color: var(--color-rose);">
+            <p>Thanks for visiting :p</p>
+        </div>
+    </footer>
+    <script src="logic/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        loadWidgets('artists');
+    </script>
+</body>
+
+
+</html>

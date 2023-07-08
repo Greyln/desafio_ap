@@ -1,0 +1,76 @@
+.navbar {
+    /* Style */
+    background-color: #3f3f3f;
+    border-radius: 10px;
+    /* Display */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    overflow: hidden; /* Hide content overflow */
+    padding: 0;
+    position: fixed; /* Always on screen */
+    top: 0;
+    min-width: 50%;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 999; /* Display on top */
+    flex-direction: row;
+}
+
+.navbar-logo img {
+    height: 30px; /* Adjust the logo height as desired */
+    margin-right: px;
+}
+
+.navbar-title {
+    color: white;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.navbar-buttons {
+    display: flex;
+    list-style-type: none; /* Remove bullets */
+}
+
+.navbar-buttons li {
+    margin-left: 10px;
+}
+
+.navbar-buttons li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px; /* Adjust the padding as desired */
+}
+
+.navbar-buttons li a:hover {
+    background-color: #111;
+    transform: scale(2);
+}
+
+/* (A) PAGINATION */
+paginate { display: flex;}
+
+
+.paginate a {
+    color: #000;
+    background: #f2f2f2;
+    padding: 8px 12px;
+    margin: 2px;
+    font-size: larger;
+    text-decoration: none;
+    cursor: pointer;
+}
+.paginate a.current {
+    color: #fff;
+    background: #4486ff;
+}
+.paginate a.first, a.last {
+    color: #f12089;
+}
+.paginate a:hover {
+    color: #000;
+    background: #ffe9e9;
+}

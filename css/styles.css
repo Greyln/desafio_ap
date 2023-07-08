@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --color-green: #1FDF64;
+    --color-lightblue: #5294E8;
+    --color-lightgreen: #A8F1BC;
+    --color-lightpink: #F1A8D5;
+    --color-lime: #73F693;
+    --color-pink: #FE889F;
+    --color-rose: #EDCDF6;
+    --color-text: aliceblue;
+    --color-darkgray: #121212;
+}
+
+body {
+    background: #242424 url("/assets/background.jpg") fixed;
+    background-size: cover;
+    color: var(--color-text);
+    font-family: "Raleway", "Montserrat", monospace;
+    font-size: large;
+}
+
+main {
+    margin-top: 100px;
+}
+
+h1, h2, h3 {
+    margin-top: 1%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content {
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.content.text {
+    padding: 1px 10px;
+    color: black;
+    background-color: azure;
+}
+
+.container {
+    background-color: var(--color-darkgray);
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 1px 10px;
+    width: fit-content;
+    display: grid;
+    padding: 10px 15px;
+    width: 50%;
+}
+
+.container + .container {
+    margin-top: 40px;
+}
+
+.heading {
+    background-color: var(--color-darkgray);
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 1px 10px;
+    width: fit-content;
+    width: 25%;
+}
+
+.heading h2 {
+    margin: 0; /* Remove default margin */
+    color: black;
+}

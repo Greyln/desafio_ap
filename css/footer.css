@@ -1,0 +1,60 @@
+
+footer {
+    position: relative;
+    min-height: 14vh; /* Set a minimum height to make the footer occupy the full height of the viewport */
+}
+
+.container-bottom {
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-darkgray);
+    color: var(--color-text);
+    border-radius: 8px;
+    padding: 5px 10px;
+    text-align: center;
+    max-width: 50%; /* Maximum width */
+    margin: 0 auto; /* Horizontal margin */
+}
+
+.container-bottom p {
+    margin: 0; /* Remove default margin */
+    color: black;
+}
+
+.social {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: flex-end;
+    max-width: 60px;
+}
+
+.social a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.bx {
+    background-color: aliceblue;
+    border-radius: 8px;
+    font-size: 3em; /* 55px? */
+}
+
+#pinterest {
+    color: #c8232c;
+}
+
+#instagram {
+    background-color: #e1306c
+}
+
+#tiktok {
+    background-color: black
+}
